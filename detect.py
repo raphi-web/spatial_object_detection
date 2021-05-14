@@ -39,7 +39,7 @@ def read_img(image,config,weights):
             if confidence > CONF_THRESH:
                 center_x, center_y, w, h = (detection[0:4] * np.array([width, height, width, height])).astype('int')
 
-                x = int(center_x - w / 2) # <----------------------------------
+                x = int(center_x - w / 2) 
                 y = int(center_y - h / 2)
 
                 b_boxes.append([x, y, int(w), int(h)])
@@ -56,7 +56,6 @@ for image_file in ["to_test/" + i for i in os.listdir("to_test/") if i.split("."
     
     for class_id,conf,(x,y,w,h) in zip(class_ids, conf,bbox):
         img = image_file.split("/")[-1]
-
         f.write(f"{img}, {class_id}, {conf}, {x}, {y}, {w}, {h}\n")
 
 f.close()
