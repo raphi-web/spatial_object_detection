@@ -17,8 +17,6 @@ object identification with darknet.
    * you can use this for labeling:
      https://github.com/tzutalin/labelImg
 
-
-
 4. Execute the py file, only standard library dependencies
    $ python3 wrap.py
 
