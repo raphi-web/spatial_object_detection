@@ -1,3 +1,7 @@
+"""
+modyfied version of: https://blog.francium.tech/custom-object-training-and-detection-with-yolov3-darknet-and-opencv-41542f2ff44e
+"""
+
 import cv2
 import numpy as np
 import os
