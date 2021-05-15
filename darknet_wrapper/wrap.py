@@ -84,8 +84,8 @@ else:
     numb_imgs = len(images)
     idx = int(numb_imgs * test_frac)
 
-    train_images = images[:-1 * idx]
-    test_images = images[-1 * idx:]
+    train_images = images[idx:]
+    test_images = images[:idx]
  
 
 f = open(f"{outpath}train.txt", "w")
